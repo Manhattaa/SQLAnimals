@@ -3,8 +3,8 @@
 
 
 
---Table - Animals
-CREATE TABLE Animal (
+	--Table - Animals
+	CREATE TABLE Animal (
 	AnimalID INT PRIMARY KEY,
 	Name NVARCHAR(50),
 	Species NVARCHAR(50),
@@ -14,7 +14,7 @@ CREATE TABLE Animal (
 	Adopted BIT
 );
 
---Table - Adopters (Adopters of the Pets)
+	--Table - Adopters (Adopters of the Pets)
 	CREATE TABLE Adopters (
 	AdopterID INT PRIMARY KEY,
 	FirstName NVARCHAR(50),
@@ -23,7 +23,7 @@ CREATE TABLE Animal (
 	MailAddress NVARCHAR(50)
 );
 
--- Adopters
+	-- Adopters
 	CREATE TABLE Adoptions (
 	AdoptionID INT  PRIMARY KEY,
 	AnimalID INT,
@@ -42,14 +42,14 @@ CREATE TABLE Animal (
 	(3, 'Rex', 'Dog', 'Schepherd Dog', 2, 'Male', 1),
 	(4, 'Kitty', 'Cat', 'Siameese', 4, 'Female', 0)
 
--- Adopters
+	-- Adopters
 	INSERT INTO Adopters(AdopterID, FirstName, LastName, MobileNumber, MailAddress)
 	VALUES
 	(1, 'Amanda', 'Olving', '0739452155', 'Amanda.Olving@hejhej@.se'),
 	(2, 'Pontus', 'Ahlbäck', '0705815881', 'Philen@yahoo.dk'),
 	(3, 'Fady', 'Hatta', '07585381885', 'Fadyhatta123@hotmail.com')
 
---Adoptions
+	--Adoptions
 	INSERT INTO Adoptions (AdoptionID, AnimalID, AdopterID, AdoptionDate)
 	VALUES
 	(1, 2, 1, '2023-10-26'),
@@ -57,6 +57,6 @@ CREATE TABLE Animal (
 	(3, 1, 3, '2022-12-24')
 
 
-SELECT * FROM Animal;
+	-- SELECT * FROM Animal;
 
-SELECT * FROM Adopters;
+	-- SELECT * FROM Adopters;
