@@ -12,7 +12,7 @@
 	Age INT,
 	Sex NVARCHAR(10),
 	Adopted BIT
-);
+	);
 
 	--Table - Adopters (Adopters of the Pets)
 	CREATE TABLE Adopters (
@@ -21,7 +21,7 @@
 	LastName NVARCHAR(50),
 	MobileNumber NVARCHAR(20),
 	MailAddress NVARCHAR(50)
-);
+	);
 
 	-- Adopters
 	CREATE TABLE Adoptions (
